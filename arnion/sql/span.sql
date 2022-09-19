@@ -19,24 +19,24 @@ CREATE TABLE IF NOT EXISTS `employees` (
     ) ENGINE=MYISAM DEFAULT CHARSET=utf8;
 
 INSERT INTO departments (department_id, department_name)
-VALUES (1, "Бухгалтерия");
+VALUES (1, 'Бухгалтерия');
 
 INSERT INTO departments (department_id, department_name)
-VALUES (2, "Отдел програмирования");
+VALUES (2, 'Отдел програмирования');
 
 INSERT INTO departments (department_id, department_name)
 VALUES (3, 'Служба поддержки клиентов');
 
 
 INSERT INTO employees (first_name, middle_name, last_name, department_id)
-VALUES ("Павел", "Петрович", "Тараторкин", 1);
+VALUES ('Павел', 'Петрович', 'Тараторкин', 1);
 
 INSERT INTO employees (first_name, middle_name, last_name, department_id)
-VALUES ("Яна", "Григорьевна", "Смыслова", 1);
+VALUES ('Яна', 'Григорьевна', 'Смыслова', 1);
 
 INSERT INTO employees (first_name, middle_name, last_name, department_id)
-VALUES ("Ольга", "Леонидовна", "Щурова", 1);
+VALUES ('Ольга', 'Леонидовна', 'Щурова', 1);
 
 INSERT INTO employees (first_name, middle_name, last_name, department_id)
-VALUES ("Анатолий", "Евгеньевич", "Попов", 2);
+VALUES ('Анатолий', 'Евгеньевич', 'Попов', 2);
 
