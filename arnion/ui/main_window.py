@@ -1,8 +1,8 @@
 import tkinter as tk
 
-from arnion.data.departmens_data import DepartmentDataHandler
+from arnion.data.departmens_data import DepartmentDataHandler, DepartmentDataObject
 
-from arnion.data.employees_data import EmployeeDataHandler
+from arnion.data.employees_data import EmployeeDataHandler, EmployeeDataObject
 
 from arnion.db.mysql_connection import ConnectionHandler
 from arnion.ui.departments_reports_ui import DepartmentsReportWindow
@@ -66,9 +66,12 @@ class MainWindow:
 
     # Функция "Тест"
     def do_test(self):
-        employees = EmployeeDataHandler.select_list()
-        for employee in employees:
-            print(employee.get_full_name())
+        employee = EmployeeDataObject(first_name="Евгения", middle_name="Борисовна",
+                                      last_name="Лялина", department_id=3)
+        print(employee.employee_id)
+        EmployeeDataHandler.insert(employee)
+        print(employee.employee_id)
+        print("Готово!")
 
     # Открытие отчета "Отделы"
     def do_report_departments(self):
