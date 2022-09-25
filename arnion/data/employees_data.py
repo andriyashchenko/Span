@@ -97,7 +97,7 @@ class EmployeeDataHandler:
                                 "first_name='" + employee.first_name + "', " \
                                 "middle_name='" + employee.middle_name + "', " \
                                 "last_name='" + employee.last_name + "', " \
-                                "department_id" + str(employee.department_id) + " " \
+                                "department_id=" + str(employee.department_id) + " " \
                                + "WHERE employee_id=" + str(employee.employee_id)
                 with cnn.cursor() as cursor:
                     cursor.execute(insert_query)

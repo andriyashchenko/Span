@@ -144,8 +144,8 @@ class DepartmentWindow:
 
         # Добавление метки заголовка
         lbl_title = tk.Label(self.window, text=title_text,
-                             font=("Helvetica", 16, "bold"), bg="#0000cc", justify="center")
-        lbl_title.place(x=25, y=15,width=450, height=50)
+                             font=("Helvetica", 16, "bold"), fg="#0000cc", justify="center")
+        lbl_title.place(x=25, y=15, width=450, height=50)
 
         # Добавление полей ввода
         lbl_name = tk.Label(self.window, text="Отдел:", font=("Helvetica", 10, "bold"))

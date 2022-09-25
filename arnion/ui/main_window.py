@@ -65,11 +65,11 @@ class MainWindow:
                               font=('Helvetica', 10, 'bold'), bg='#ccffcc', command=self.do_report_employees)
         btn_report_employees.place(x=160, y=200, width=120, height=50)
 
-        # Добавление кнопки "Тест"
-        btn_test = tk.Button(self.window, text='Тест',
-                              font=('Helvetica', 10, 'bold'),
-                              bg='#ffffcc', command=self.do_test)
-        btn_test.place(x=25, y=300, width=120, height=50)
+        # # Добавление кнопки "Тест"
+        # btn_test = tk.Button(self.window, text='Тест',
+        #                       font=('Helvetica', 10, 'bold'),
+        #                       bg='#ffffcc', command=self.do_test)
+        # btn_test.place(x=25, y=300, width=120, height=50)
 
         #Добавление кнопки закрытия программы
         btn_close = tk.Button(self.window, text='Выход',
